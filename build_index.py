@@ -7,4 +7,4 @@ if __name__ == "__main__":
     embeddings = embed_chunks(chunks)
     save_faiss_index(embeddings)
     save_text_chunks(chunks)
-    print(f"✅ Indexed {len(chunks)} chunks from: {file_path}")
+    print(f" Indexed {len(chunks)} chunks from: {file_path}")
