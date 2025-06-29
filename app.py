@@ -40,12 +40,12 @@ def ask_question(question, top_k=3, threshold=1.4):
     context = clean_context("\n".join(relevant_chunks))
     answer = generate_answer(question, context)
 
-    print("\n\033[1;32m✅ Answer:\033[0m\n")
+    print("\n\033[1;32m Answer:\033[0m\n")
     print(answer)
 
 
 if __name__ == "__main__":
-    print("🤖 AI FAQ Assistant (type 'exit' to quit')")
+    print(" AI FAQ Assistant (type 'exit' to quit')")
     while True:
         q = input("\nAsk your question: ")
         if q.lower() == "exit":
